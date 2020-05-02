@@ -3,6 +3,8 @@ import React from 'react';
 import Table from 'react-bootstrap/Table';
 import PropTypes from 'prop-types';
 
+import EtelRekord from './EtelRekord';
+
 export default function HetiMenu({ index }) {
   return (
     <div>
@@ -19,62 +21,13 @@ export default function HetiMenu({ index }) {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Étel</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-          </tr>
-          <tr>
-            <td>Allergének</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-          </tr>
-          <tr>
-            <td>Só</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-          </tr>
-          <tr>
-            <td>Fehérje</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-          </tr>
-          <tr>
-            <td>Szénhidrát</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-          </tr>
-          <tr>
-            <td>Zsír</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-          </tr>
-          <tr>
-            <td>Kalória</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-          </tr>
+          <EtelRekord title="Étel" />
+          <EtelRekord title="Allergének" />
+          <EtelRekord title="Só" />
+          <EtelRekord title="Fehérje" />
+          <EtelRekord title="Szénhidrát" />
+          <EtelRekord title="Zsir" />
+          <EtelRekord title="Kalória" />
         </tbody>
       </Table>
     </div>
