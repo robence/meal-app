@@ -67,6 +67,14 @@ export default function HetiMenu({ index }) {
             <td>#</td>
             <td>#</td>
           </tr>
+          <tr>
+            <td>Kalória</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+          </tr>
         </tbody>
       </Table>
     </div>
