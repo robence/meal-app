@@ -5,7 +5,12 @@ import PropTypes from 'prop-types';
 
 import EtelRekord from './EtelRekord';
 
+import ETELEK from '../data/Etelek';
+
 export default function HetiMenu({ index }) {
+  console.log('ETELEK');
+  console.log(ETELEK);
+
   return (
     <div>
       <p>{`${index}. Heti Menu`}</p>
@@ -21,13 +26,13 @@ export default function HetiMenu({ index }) {
           </tr>
         </thead>
         <tbody>
-          <EtelRekord title="Étel" />
-          <EtelRekord title="Allergének" />
-          <EtelRekord title="Só" />
-          <EtelRekord title="Fehérje" />
-          <EtelRekord title="Szénhidrát" />
-          <EtelRekord title="Zsir" />
-          <EtelRekord title="Kalória" />
+          <EtelRekord prop="nev" data={ETELEK} title="Étel" />
+          <EtelRekord prop="so" data={ETELEK} title="Só" />
+          <EtelRekord prop="szenhidrat" data={ETELEK} title="Szénhidrát" />
+          <EtelRekord prop="feherje" data={ETELEK} title="Fehérje" />
+          <EtelRekord prop="zsir" data={ETELEK} title="Zsir" />
+          <EtelRekord prop="kaloria" data={ETELEK} title="Kalória" />
+          <EtelRekord prop="allergenek" data={ETELEK} title="Allergének" />
         </tbody>
       </Table>
     </div>
