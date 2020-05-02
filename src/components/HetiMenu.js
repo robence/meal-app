@@ -8,9 +8,6 @@ import EtelRekord from './EtelRekord';
 import ETELEK from '../data/Etelek';
 
 export default function HetiMenu({ index }) {
-  console.log('ETELEK');
-  console.log(ETELEK);
-
   return (
     <div>
       <p>{`${index}. Heti Menu`}</p>
