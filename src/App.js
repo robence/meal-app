@@ -1,14 +1,11 @@
 import React from 'react';
-import './App.css';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import HaviMenu from './components/HaviMenu';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>Hello there</p>
-      </header>
-    </div>
-  );
+  return <HaviMenu />;
 }
 
 export default App;
