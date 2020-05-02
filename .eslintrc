@@ -8,8 +8,7 @@
     ],
     "no-undef": "warn",
     "no-param-reassign": "warn",
-    "no-use-before-define": "warn",
-    "react/prop-types": "off"
+    "no-use-before-define": "warn"
   },
   "settings": {
     "import/resolver": {

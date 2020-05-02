@@ -1,8 +1,9 @@
 import React from 'react';
 
 import Table from 'react-bootstrap/Table';
+import PropTypes from 'prop-types';
 
-export default function HaviMenu({ index }) {
+export default function HetiMenu({ index }) {
   return (
     <div>
       <p>{`${index}. Heti Menu`}</p>
@@ -71,3 +72,7 @@ export default function HaviMenu({ index }) {
     </div>
   );
 }
+
+HetiMenu.propTypes = {
+  index: PropTypes.number.isRequired,
+};
