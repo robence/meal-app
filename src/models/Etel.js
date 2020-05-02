@@ -1,5 +1,5 @@
 export default class Etel {
-  constructor(id, nev, szenhidrat, feherje, zsir, so, kaloria, allergenek) {
+  constructor(id, nev, szenhidrat, feherje, zsir, so, kaloria, allergenek,kategoria) {
     this.id = id;
     this.nev = nev;
     this.szenhidrat = szenhidrat;
@@ -8,5 +8,6 @@ export default class Etel {
     this.so = so;
     this.kaloria = kaloria;
     this.allergenek = allergenek;
+    this.kategoria = kategoria;
   }
 }
