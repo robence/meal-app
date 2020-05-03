@@ -8,7 +8,7 @@ export default function HaviMenu() {
     <Container>
       <h2>Havi Menü</h2>
       <KetHetiMenu index={0} />
-      <KetHetiMenu index={1} />
+      {/* <KetHetiMenu index={1} /> */}
     </Container>
   );
 }

@@ -13,6 +13,6 @@ export default function EtelTablazat({ hetiEtel }) {
     { title: 'Allergének', prop: 'allergenek' },
   ];
   return tablazatInfo.map(({ title, prop }) => (
-    <EtelRekord title={title} prop={prop} hetiEtel={hetiEtel} />
+    <EtelRekord key={prop} title={title} prop={prop} hetiEtel={hetiEtel} />
   ));
 }

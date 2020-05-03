@@ -1,12 +1,33 @@
 /* eslint-disable react/prop-types */
+/* eslint-disable  */
 import React from 'react';
 import ALLERGENEK from '../utils/constants';
 
-const EtelCella = ({ etel, prop }) => {
-  let text = etel[prop];
+function mergeIntoMeal(etel) {
+  return etel.reduce((meal, course) => {
+    for (const key in course) {
+      if (!meal[key]) {
+        meal[key] = course[key];
+      } else {
+        if (typeof meal[key] === 'string') {
+          meal[key] = `${meal[key]}, ${course[key]}`;
+        } else if (typeof meal[key] === 'number') {
+          const sum = meal[key] + course[key];
+          meal[key] = Math.round((sum + Number.EPSILON) * 100) / 100;
+        } else if (typeof meal[key] === 'array') {
+          meal[key] = [...new Set([...meal[key], ...course[key]])];
+        }
+      }
+    }
+    return meal;
+  }, {});
+}
+
+const EtelCella = ({ meal, prop }) => {
+  let text = meal[prop];
 
   if (prop === 'allergenek') {
-    text = etel[prop].map((allergenkod) => ALLERGENEK[allergenkod]).join(', ');
+    text = meal[prop].map((allergenkod) => ALLERGENEK[allergenkod]).join(', ');
   }
 
   return (
@@ -15,14 +36,19 @@ const EtelCella = ({ etel, prop }) => {
     </td>
   );
 };
+
 export default function EtelRekord({ title, hetiEtel, prop }) {
   return (
     <tr>
       <td>{title}</td>
 
-      {hetiEtel.map((etel) => (
-        <EtelCella key={etel.id} etel={etel} prop={prop} />
-      ))}
+      {hetiEtel.map((etel) => {
+        const meal = mergeIntoMeal(etel);
+
+        console.log(meal);
+        console.log('meal');
+        return <EtelCella key={meal.id} meal={meal} prop={prop} />;
+      })}
     </tr>
   );
 }
