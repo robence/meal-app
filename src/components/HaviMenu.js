@@ -1,23 +1,14 @@
 import React from 'react';
 
 import Container from 'react-bootstrap/Container';
-
-import { LEVESEK, FOETELEK, HARMADIK } from '../data/Etelek';
-import HetiMenu from './HetiMenu';
-
-function calculateWeeklyFood(previousWeek = []) {
-  return FOETELEK;
-}
+import KetHetiMenu from './KetHetiMenu';
 
 export default function HaviMenu() {
-  const elsoHet = calculateWeeklyFood();
-  const masodikHet = calculateWeeklyFood();
-
   return (
     <Container>
-      <h2>Havi Menu</h2>
-      <HetiMenu index={1} hetiEtel={elsoHet} />
-      <HetiMenu index={2} hetiEtel={masodikHet} />
+      <h2>Havi Menü</h2>
+      <KetHetiMenu index={0} />
+      <KetHetiMenu index={1} />
     </Container>
   );
 }

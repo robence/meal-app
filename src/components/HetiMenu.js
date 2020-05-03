@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 
 import React from 'react';
-
 import Table from 'react-bootstrap/Table';
 
 import EtelTablazat from './EtelTablazat';
