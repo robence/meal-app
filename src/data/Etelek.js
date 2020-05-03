@@ -1,5 +1,3 @@
-import Etel from '../models/Etel';
-
 export const LEVESEK = [
   {
     id: 'l1',
@@ -81,17 +79,26 @@ const ETELEK = [
 ];
 
 export const HARMADIK = [
-  new Etel('e1', 'Savanyu_uborka', 0.3, 0.2, 1.2, 0.4, [10], 'Savanyu'),
-  new Etel(
-    'e2',
-    'Savanyu_paprika',
-    0.5,
-    0.2,
-    2.4,
-    0.3,
-    ['allergen 3', 'allergen 1'],
-    'Kategoria1'
-  ),
+  {
+    id: 'e1',
+    name: 'Savanyu_uborka',
+    szenhidrat: 0.3,
+    feherje: 0.2,
+    zsir: 1.2,
+    so: 0.4,
+    allergenek: [10],
+    kategoria: 'Savanyu',
+  },
+  {
+    id: 'e2',
+    name: 'Savanyu_paprika',
+    szenhidrat: 0.5,
+    feherje: 0.2,
+    zsir: 2.4,
+    so: 0.3,
+    allergenek: ['allergen 3', 'allergen 1'],
+    kategoria: 'Kategoria1',
+  },
 ];
 
 export default ETELEK;
