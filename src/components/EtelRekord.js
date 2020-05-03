@@ -10,7 +10,7 @@ function mergeIntoMeal(etel) {
         meal[key] = course[key];
       } else {
         if (typeof meal[key] === 'string') {
-          meal[key] = `${meal[key]}, ${course[key]}`;
+          meal[key] = `${meal[key]}\n${course[key]}`;
         } else if (typeof meal[key] === 'number') {
           const sum = meal[key] + course[key];
           meal[key] = Math.round((sum + Number.EPSILON) * 100) / 100;
@@ -45,8 +45,8 @@ export default function EtelRekord({ title, hetiEtel, prop }) {
       {hetiEtel.map((etel) => {
         const meal = mergeIntoMeal(etel);
 
-        console.log(meal);
-        console.log('meal');
+        console.log(etel);
+        console.log('etel');
         return <EtelCella key={meal.id} meal={meal} prop={prop} />;
       })}
     </tr>
