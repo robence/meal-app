@@ -8,13 +8,21 @@ export const LEVESEK = [
     feherje: 18.7,
     zsir: 17.8,
     so: 0.8,
-    kaloria: 320,
     allergenek: [1, 6, 7, 10],
     kategoria: 'Huskeszitmeny',
   },
+  {
+    id: 'l2',
+    nev: 'Babgulyas',
+    szenhidrat: 12.5,
+    feherje: 10.8,
+    zsir: 19.4,
+    so: 3.25,
+    allergenek: [1, 3, 9],
+    kategoria: 'Bab',
+  },
 ];
 
-// new Etel('e2', 'Babgulyas', 12.5, 10.8, 19.4, 3.25, 120, [1,3,9], 'Bab'),
 // new Etel('e3', 'Brokkolikremleves,levesgyongy', 8.8, 15.6, 25, 2.2, 120, [1,3,7], 'Kremleves'),
 // new Etel('e4', 'Barackkremleves', 8.6, 7.3, 34.4, 0.8, 120, [7], 'Kremleves'),
 // new Etel('e5', 'Majgombocleves', 41.7, 38.2, 43.1, 2.8, 120, [1,3,9], 'Huskeszitmeny'),
