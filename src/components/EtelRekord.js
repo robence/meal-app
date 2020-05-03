@@ -1,22 +1,20 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 
-import PropTypes from 'prop-types';
+const Etel = ({ etel, prop }) => (
+  <td>
+    <p>{etel[prop]}</p>
+  </td>
+);
 
-export default function EtelRekord({ title, data, prop }) {
+export default function EtelRekord({ title, hetiEtel, prop }) {
   return (
     <tr>
       <td>{title}</td>
 
-      {data.map((etel) => (
-        <td key={etel.id}>{etel[prop]}</td>
+      {hetiEtel.map((etel) => (
+        <Etel key={etel.id} etel={etel} prop={prop} />
       ))}
     </tr>
   );
 }
-
-EtelRekord.propTypes = {
-  title: PropTypes.string.isRequired,
-  prop: PropTypes.string.isRequired,
-  /* eslint-disable-next-line */
-  data: PropTypes.object.isRequired,
-};
