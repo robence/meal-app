@@ -26,7 +26,7 @@ export const LEVESEK = [
     zsir: 15.6,
     szenhidrat: 25,
     so: 2.2,
-    allergenek: [1,3,7],
+    allergenek: [1, 3, 7],
     kategoria: 'Kremleves',
   },
   {
@@ -46,12 +46,12 @@ export const LEVESEK = [
     zsir: 38.2,
     szenhidrat: 43.1,
     so: 2.8,
-    allergenek: [1,3,9],
+    allergenek: [1, 3, 9],
     kategoria: 'Huskeszitmeny',
   },
 ];
 
-const ETELEK = [
+export const FOETELEK = [
   {
     id: 'e1',
     nev: 'Krumplifozelek,vagdalt',
@@ -126,5 +126,3 @@ export const HARMADIK = [
     kategoria: 'Kategoria1',
   },
 ];
-
-export default ETELEK;

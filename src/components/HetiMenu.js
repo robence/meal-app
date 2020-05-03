@@ -5,9 +5,7 @@ import PropTypes from 'prop-types';
 
 import EtelRekord from './EtelRekord';
 
-import ETELEK from '../data/Etelek';
-
-export default function HetiMenu({ index }) {
+export default function HetiMenu({ index, data }) {
   return (
     <div>
       <p>{`${index}. Heti Menu`}</p>
@@ -23,13 +21,13 @@ export default function HetiMenu({ index }) {
           </tr>
         </thead>
         <tbody>
-          <EtelRekord prop="nev" data={ETELEK} title="Étel" />
-          <EtelRekord prop="so" data={ETELEK} title="Só" />
-          <EtelRekord prop="szenhidrat" data={ETELEK} title="Szénhidrát" />
-          <EtelRekord prop="feherje" data={ETELEK} title="Fehérje" />
-          <EtelRekord prop="zsir" data={ETELEK} title="Zsir" />
-          <EtelRekord prop="kaloria" data={ETELEK} title="Kalória" />
-          <EtelRekord prop="allergenek" data={ETELEK} title="Allergének" />
+          <EtelRekord prop="nev" data={data} title="Étel" />
+          <EtelRekord prop="so" data={data} title="Só" />
+          <EtelRekord prop="szenhidrat" data={data} title="Szénhidrát" />
+          <EtelRekord prop="feherje" data={data} title="Fehérje" />
+          <EtelRekord prop="zsir" data={data} title="Zsir" />
+          <EtelRekord prop="kaloria" data={data} title="Kalória" />
+          <EtelRekord prop="allergenek" data={data} title="Allergének" />
         </tbody>
       </Table>
     </div>
@@ -38,4 +36,15 @@ export default function HetiMenu({ index }) {
 
 HetiMenu.propTypes = {
   index: PropTypes.number.isRequired,
+  data: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    nev: PropTypes.string.isRequired,
+    szenhidrat: PropTypes.number.isRequired,
+    feherje: PropTypes.number.isRequired,
+    zsir: PropTypes.number.isRequired,
+    so: PropTypes.number.isRequired,
+    allergenek: PropTypes.array.isRequired,
+    kategoria: PropTypes.string.isRequired,
+    // kaloria: PropTypes.number.isRequired,
+  }).isRequired,
 };
