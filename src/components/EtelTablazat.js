@@ -4,13 +4,13 @@ import EtelRekord from './EtelRekord';
 
 export default function EtelTablazat({ hetiEtel }) {
   const tablazatInfo = [
-    { title: 'Nev', prop: 'nev' },
-    { title: 'So', prop: 'so' },
-    { title: 'Szenhidrat', prop: 'szenhidrat' },
-    { title: 'Feherje', prop: 'feherje' },
-    { title: 'Zsir', prop: 'zsir' },
-    { title: 'Kaloria', prop: 'kaloria' },
-    { title: 'Allergenek', prop: 'allergenek' },
+    { title: 'Étel', prop: 'nev' },
+    { title: 'Só', prop: 'so' },
+    { title: 'Szénhidrát', prop: 'szenhidrat' },
+    { title: 'Fehérje', prop: 'feherje' },
+    { title: 'Zsír', prop: 'zsir' },
+    { title: 'Kalória', prop: 'kaloria' },
+    { title: 'Allergének', prop: 'allergenek' },
   ];
   return tablazatInfo.map(({ title, prop }) => (
     <EtelRekord title={title} prop={prop} hetiEtel={hetiEtel} />

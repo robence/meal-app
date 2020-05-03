@@ -2,12 +2,8 @@
 
 import React from 'react';
 
-import { LEVESEK, FOETELEK, HARMADIK } from '../data/Etelek';
 import HetiMenu from './HetiMenu';
-
-function calculateWeeklyFood(previousWeek = []) {
-  return FOETELEK;
-}
+import calculateWeeklyFood from '../utils/calculations';
 
 export default function KetHetiMenu({ index }) {
   const elsoHet = calculateWeeklyFood();
