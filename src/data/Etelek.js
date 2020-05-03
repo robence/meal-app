@@ -1197,7 +1197,7 @@ export const FOETELEK = [
 export const HARMADIK = [
   {
     id: 'h1',
-    name: 'Savanyu_uborka',
+    nev: 'Savanyu_uborka',
     feherje: 0.3,
     zsir: 0.2,
     szenhidrat: 1.2,
@@ -1207,7 +1207,7 @@ export const HARMADIK = [
   },
   {
     id: 'h2',
-    name: 'Savanyu_paprika',
+    nev: 'Savanyu_paprika',
     feherje: 0.5,
     zsir: 0.2,
     szenhidrat: 2.4,
@@ -1217,7 +1217,7 @@ export const HARMADIK = [
   },
   {
     id: 'h3',
-    name: 'Cekla',
+    nev: 'Cekla',
     feherje: 0.8,
     zsir: 0.1,
     szenhidrat: 15.5,
@@ -1227,7 +1227,7 @@ export const HARMADIK = [
   },
   {
     id: 'h4',
-    name: 'Uborkasalata',
+    nev: 'Uborkasalata',
     feherje: 0.6,
     zsir: 0.2,
     szenhidrat: 8.9,
@@ -1237,7 +1237,7 @@ export const HARMADIK = [
   },
   {
     id: 'h5',
-    name: 'Tejfolos_uborka_salata',
+    nev: 'Tejfolos_uborka_salata',
     feherje: 1.2,
     zsir: 4.5,
     szenhidrat: 5.4,
@@ -1247,7 +1247,7 @@ export const HARMADIK = [
   },
   {
     id: 'h6',
-    name: 'Kaposztasalata',
+    nev: 'Kaposztasalata',
     feherje: 1.1,
     zsir: 0.1,
     szenhidrat: 4.9,
@@ -1257,7 +1257,7 @@ export const HARMADIK = [
   },
   {
     id: 'h7',
-    name: 'Hagymas_kaposztasalata',
+    nev: 'Hagymas_kaposztasalata',
     feherje: 1.5,
     zsir: 0.3,
     szenhidrat: 5.9,
@@ -1267,7 +1267,7 @@ export const HARMADIK = [
   },
   {
     id: 'h8',
-    name: 'Vegyes_savanyusag',
+    nev: 'Vegyes_savanyusag',
     feherje: 0.7,
     zsir: 0.2,
     szenhidrat: 4,
@@ -1277,7 +1277,7 @@ export const HARMADIK = [
   },
   {
     id: 'h9',
-    name: 'Alma',
+    nev: 'Alma',
     feherje: 0.4,
     zsir: 0.3,
     szenhidrat: 17.1,
@@ -1287,7 +1287,7 @@ export const HARMADIK = [
   },
   {
     id: 'h10',
-    name: 'Korte',
+    nev: 'Korte',
     feherje: 0.7,
     zsir: 0.4,
     szenhidrat: 21.5,
@@ -1297,7 +1297,7 @@ export const HARMADIK = [
   },
   {
     id: 'h11',
-    name: 'Dinnye',
+    nev: 'Dinnye',
     feherje: 0.6,
     zsir: 0.2,
     szenhidrat: 7.2,
@@ -1307,7 +1307,7 @@ export const HARMADIK = [
   },
   {
     id: 'h12',
-    name: 'Szilva',
+    nev: 'Szilva',
     feherje: 0.6,
     zsir: 0.2,
     szenhidrat: 8.1,
@@ -1317,7 +1317,7 @@ export const HARMADIK = [
   },
   {
     id: 'h13',
-    name: 'Limonade',
+    nev: 'Limonade',
     feherje: 0,
     zsir: 0,
     szenhidrat: 22.5,
@@ -1327,7 +1327,7 @@ export const HARMADIK = [
   },
   {
     id: 'h14',
-    name: 'Muzliszelet',
+    nev: 'Muzliszelet',
     feherje: 1.7,
     zsir: 1.3,
     szenhidrat: 13,
@@ -1337,7 +1337,7 @@ export const HARMADIK = [
   },
   {
     id: 'h15',
-    name: 'Nápolyi',
+    nev: 'Nápolyi',
     feherje: 0.8,
     zsir: 4.4,
     szenhidrat: 11.4,
@@ -1347,7 +1347,7 @@ export const HARMADIK = [
   },
   {
     id: 'h16',
-    name: 'Sport szelet',
+    nev: 'Sport szelet',
     feherje: 1,
     zsir: 3.4,
     szenhidrat: 17.4,
@@ -1357,7 +1357,7 @@ export const HARMADIK = [
   },
   {
     id: 'h17',
-    name: 'Almás Pite',
+    nev: 'Almás Pite',
     feherje: 3.6,
     zsir: 4.1,
     szenhidrat: 21.7,
@@ -1367,7 +1367,7 @@ export const HARMADIK = [
   },
   {
     id: 'h18',
-    name: 'Brownie',
+    nev: 'Brownie',
     feherje: 2.6,
     zsir: 6.1,
     szenhidrat: 24.3,
