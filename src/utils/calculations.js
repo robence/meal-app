@@ -1,31 +1,56 @@
+/* eslint-disable */
 import { LEVESEK, FOETELEK, HARMADIK } from '../data/Etelek';
 
-const CHECKS = {};
+const DAILY_CHECKS = {
+  kaloria: { min: 700, max: 900 },
+  so: { min: 2, max: 4.3 },
+};
 
-function withKaloria(meal) {
-  return meal.map((item) => {
-    const { szenhidrat, zsir, feherje } = item;
-    const kaloria = Math.round(feherje * 4 + szenhidrat * 4 + zsir * 9);
-    return { ...item, kaloria };
-  });
+function calculateDailyIntake(meal) {
+  const { leves, foetel, harmadik } = meal;
+
+  // TODO: add so metric
+  const dailyCalory = foetel.kaloria + leves.kaloria + harmadik.kaloria;
+  const dailySalt = foetel.so + leves.so + harmadik.so;
+
+  return {
+    kaloria: dailyCalory,
+    so: dailySalt,
+  };
 }
 
-function calculateDailyFood(previousFoods = []) {
-  const index = Math.floor(Math.random() * 5);
-  const index2 = Math.floor(Math.random() * 5);
+function calculateKaloria(course) {
+  const { szenhidrat, zsir, feherje } = course;
+  const kaloria = Math.round(feherje * 4 + szenhidrat * 4 + zsir * 9);
+  return kaloria;
+}
 
-  const leves = LEVESEK[index2];
-  const foetel = FOETELEK[index];
-  const harmadik = HARMADIK[0];
+function withKaloria(meal) {
+  const kombo = Object.keys(meal).reduce((memo, courseKey) => {
+    const kaloria = calculateKaloria(meal[courseKey]);
 
-  // return withKaloria(foetel);
-  return withKaloria([leves, foetel, harmadik]);
+    return {
+      ...memo,
+      [courseKey]: {
+        ...meal[courseKey],
+        kaloria,
+      },
+    };
+  }, {});
+  return kombo;
 }
 
 export default function calculateMonthlyFood() {
   // 1. 3-as parok osszeallitasa
 
+  const kombo = createFoodDescartes();
+  console.log('kombo');
+  console.log(kombo);
+
   // 2. kaloria es so alapjan szures
+  const filteredKombo = filterFoodByMetrics(kombo);
+  console.log('filteredKombo');
+  console.log(filteredKombo);
 
   // 3. csoportositas kategoria szerint
 
@@ -44,4 +69,43 @@ export default function calculateMonthlyFood() {
    *  */
 
   return [];
+}
+
+function createFoodDescartes() {
+  const kombo = [];
+  for (const leves of LEVESEK) {
+    for (const foetel of FOETELEK) {
+      for (const harmadik of HARMADIK) {
+        const komboElem = {
+          leves,
+          foetel,
+          harmadik,
+        };
+
+        kombo.push(withKaloria(komboElem));
+      }
+    }
+  }
+
+  return kombo;
+}
+
+function filterFoodByMetrics(kombo) {
+  const isMealAcceptable = (meal) => {
+    const { kaloria, so } = calculateDailyIntake(meal);
+    const isAccepted =
+      kaloria >= DAILY_CHECKS.kaloria.min &&
+      kaloria <= DAILY_CHECKS.kaloria.max &&
+      so >= DAILY_CHECKS.so.min &&
+      so <= DAILY_CHECKS.so.max;
+
+    if (isAccepted) {
+      console.log(so);
+    }
+
+    return isAccepted;
+  };
+
+  const filteredKombo = kombo.filter((meal) => isMealAcceptable(meal));
+  return filteredKombo;
 }
