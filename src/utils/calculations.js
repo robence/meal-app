@@ -1,5 +1,7 @@
 import { LEVESEK, FOETELEK, HARMADIK } from '../data/Etelek';
 
+const CHECKS = {};
+
 function withKaloria(meal) {
   return meal.map((item) => {
     const { szenhidrat, zsir, feherje } = item;
@@ -20,13 +22,26 @@ function calculateDailyFood(previousFoods = []) {
   return withKaloria([leves, foetel, harmadik]);
 }
 
-export default function calculateWeeklyFood(previousWeek = []) {
-  const weeklyFood = Array(5)
-    .fill(null)
-    .reduce((hetiKaja) => {
-      const napiKaja = calculateDailyFood([...previousWeek, ...hetiKaja]);
-      return [...hetiKaja, napiKaja];
-    }, []);
+export default function calculateMonthlyFood() {
+  // 1. 3-as parok osszeallitasa
 
-  return weeklyFood;
+  // 2. kaloria es so alapjan szures
+
+  // 3. csoportositas kategoria szerint
+
+  /**
+   *  4. ALGORITMUS
+   *
+   *  a) vegigmegyunk a minimum felteteleken, amig el nem erjuk a min erteket
+   *  b) megallasi feltetel kategoriankent a min ertek elerese
+   *  c) csak olyan kajat (3as par) valaszthatunk ami nem szegi meg a max hatart
+   *  d) kozben taroljuk a jelenlegi kategoria elofordulasokat,
+   *     azokra ahol van megszoritas
+   *  e) kaja valasztas az adott csoportbol tortenik, az osszes megfelelt kozul/
+   *     veletlenszam generalassal, ez biztositja a valtozatossagot es az
+   *     ujraprobalas eselyeit noveli
+   *  f) amennyiben nem ertuk el a 20 kajat, kezdodik elolrol
+   *  */
+
+  return [];
 }

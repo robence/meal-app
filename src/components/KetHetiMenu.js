@@ -3,11 +3,9 @@
 import React from 'react';
 
 import HetiMenu from './HetiMenu';
-import calculateWeeklyFood from '../utils/calculations';
 
-export default function KetHetiMenu({ index }) {
-  const elsoHet = calculateWeeklyFood();
-  const masodikHet = calculateWeeklyFood(elsoHet);
+export default function KetHetiMenu({ index, hetek }) {
+  const [elsoHet, masodikHet] = hetek;
 
   return (
     <>
