@@ -40,22 +40,30 @@ function withKaloria(meal) {
   return kombo;
 }
 
+const withKategoria = (meal) => {
+  const { leves, foetel, harmadik } = meal;
+  const kategoriak = [
+    ...new Set([leves.kategoria, foetel.kategoria, harmadik.kategoria]),
+  ];
+
+  return {
+    ...meal,
+    kategoriak,
+  };
+};
+
 export default function calculateMonthlyFood() {
   // 1. 3-as parok osszeallitasa
 
   const kombo = createFoodDescartes();
-  console.log('kombo');
-  console.log(kombo);
 
   // 2. kaloria es so alapjan szures
   const filteredKombo = filterFoodByMetrics(kombo);
   console.log('filteredKombo');
   console.log(filteredKombo);
 
-  // 3. csoportositas kategoria szerint
-
   /**
-   *  4. ALGORITMUS
+   *  3. ALGORITMUS
    *
    *  a) vegigmegyunk a minimum felteteleken, amig el nem erjuk a min erteket
    *  b) megallasi feltetel kategoriankent a min ertek elerese
@@ -99,13 +107,10 @@ function filterFoodByMetrics(kombo) {
       so >= DAILY_CHECKS.so.min &&
       so <= DAILY_CHECKS.so.max;
 
-    if (isAccepted) {
-      console.log(so);
-    }
-
     return isAccepted;
   };
 
-  const filteredKombo = kombo.filter((meal) => isMealAcceptable(meal));
+  const filteredKombo = kombo.filter(isMealAcceptable).map(withKategoria);
+
   return filteredKombo;
 }
