@@ -6,6 +6,20 @@ const DAILY_CHECKS = {
   so: { min: 2, max: 4.3 },
 };
 
+const MONTHLY_CHECKS = {
+  Hús: { min: 6, max: 10 },
+  Húskészítmény: { min: 2 },
+  Hal: {},
+  Belsőség: {},
+  Tojás: {},
+  Rizs: {},
+  Tészta: {},
+  Krumpli: {},
+  Édesség: {},
+  Péksütemény: {},
+  Bő_Zsírban_Sült: {},
+};
+
 function calculateDailyIntake(meal) {
   const { leves, foetel, harmadik } = meal;
 
@@ -76,6 +90,8 @@ export default function calculateMonthlyFood() {
    *  f) amennyiben nem ertuk el a 20 kajat, kezdodik elolrol
    *  */
 
+  abc(filteredKombo);
+
   return [];
 }
 
@@ -113,4 +129,67 @@ function filterFoodByMetrics(kombo) {
   const filteredKombo = kombo.filter(isMealAcceptable).map(withKategoria);
 
   return filteredKombo;
+}
+
+function abc(kombo) {
+  // kivalogatni 6 elemet amik kozott van hus
+
+  const currentCategoryCounts = {};
+
+  console.log('foods');
+
+  Array(20)
+    .fill(null)
+    .forEach((_) => {
+      takeRandom(kombo, currentCategoryCounts);
+    });
+}
+
+// TODO: work for only one category first
+function takeRandom(kombo, currentCategoryCounts, blacklist = []) {
+  // general random szamot
+  // visszaadja az elemet, ha megfelel
+  // megfelel - checkkek es nem fordult meg elo
+
+  const index = generateBetween(0, kombo.length);
+  const food = kombo[index];
+
+  let isMealAcceptable = true;
+
+  if (blacklist.includes(index)) {
+    isMealAcceptable = false;
+  }
+
+  for (const kategoria in kombo.kategoriak) {
+    isMealAcceptable = isCategoryOkay(kategoria, currentCategoryCounts);
+  }
+
+  // TODO: is meal already picked
+  // FIXME: fix blacklist
+
+  if (!isMealAcceptable) {
+    return takeRandom(kombo, currentCategoryCounts, [...blacklist, index]);
+  }
+
+  console.log(food);
+  return food;
+}
+
+function generateBetween(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+function isCategoryOkay(kategoria, currentCategoryCounts) {
+  const hasMealInCategory = kategoria in currentCategoryCounts;
+
+  const hasMealInCount =
+    currentCategoryCounts[kategoria] && currentCategoryCounts[kategoria] > 0;
+
+  const hasMealMaximum = hasMealInCount && 'max' in MONTHLY_CHECKS[kategoria];
+
+  const isMealCountAtMaximumForCategory =
+    hasMealMaximum &&
+    currentCategoryCounts[kategoria] === MONTHLY_CHECKS[kategoria].max;
+
+  return !hasMealInCategory || !isMealCountAtMaximumForCategory;
 }
