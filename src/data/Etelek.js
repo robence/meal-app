@@ -7,7 +7,7 @@ export const LEVESEK = [
     szenhidrat: 17.8,
     so: 0.8,
     allergenek: [1, 6, 7, 10],
-    kategoria: 'húskeszitmeny',
+    kategoria: 'Húskészítmény',
   },
   {
     id: 'l2',
@@ -21,7 +21,7 @@ export const LEVESEK = [
   },
   {
     id: 'l3',
-    nev: 'Brokkolikrémleves,levesgyongy',
+    nev: 'Brokkolikrémleves levesgyöngyel',
     feherje: 8.8,
     zsir: 15.6,
     szenhidrat: 25,
@@ -47,7 +47,7 @@ export const LEVESEK = [
     szenhidrat: 43.1,
     so: 2.8,
     allergenek: [1, 3, 9],
-    kategoria: 'húskeszitmeny',
+    kategoria: 'Húskészítmény',
   },
   {
     id: 'l6',
@@ -87,7 +87,7 @@ export const LEVESEK = [
     szenhidrat: 46.3,
     so: 2.8,
     allergenek: [1, 3, 9],
-    kategoria: 'Tojas',
+    kategoria: 'Tojás',
   },
   {
     id: 'l10',
@@ -107,7 +107,7 @@ export const LEVESEK = [
     szenhidrat: 25,
     so: 2.4,
     allergenek: [1, 3, 7, 9, 10],
-    kategoria: 'Tojas',
+    kategoria: 'Tojás',
   },
   {
     id: 'l12',
@@ -207,7 +207,7 @@ export const LEVESEK = [
     szenhidrat: 49.6,
     so: 1.7,
     allergenek: [1, 3],
-    kategoria: 'húskeszitmeny',
+    kategoria: 'Húskészítmény',
   },
   {
     id: 'l22',
@@ -267,7 +267,7 @@ export const LEVESEK = [
     szenhidrat: 12.5,
     so: 1.4,
     allergenek: [1, 3],
-    kategoria: 'Tojas',
+    kategoria: 'Tojás',
   },
   {
     id: 'l28',
@@ -520,7 +520,7 @@ export const FOETELEK = [
     szenhidrat: 53.3,
     so: 2.3,
     allergenek: [1, 3, 7],
-    kategoria: 'Edesseg',
+    kategoria: 'Édesség',
   },
   {
     id: 'e11',
@@ -590,7 +590,7 @@ export const FOETELEK = [
     szenhidrat: 66.5,
     so: 3,
     allergenek: [1, 3, 6, 7, 10, 14],
-    kategoria: 'Bo_Zsirban_Sult',
+    kategoria: 'Bő_Zsírban_Sült',
   },
   {
     id: 'e18',
@@ -630,7 +630,7 @@ export const FOETELEK = [
     szenhidrat: 22.1,
     so: 2.4,
     allergenek: [1, 3, 7],
-    kategoria: 'Tojas',
+    kategoria: 'Tojás',
   },
   {
     id: 'e22',
@@ -680,7 +680,7 @@ export const FOETELEK = [
     szenhidrat: 60.9,
     so: 0.9,
     allergenek: [1, 3],
-    kategoria: 'Edesseg',
+    kategoria: 'Édesség',
   },
   {
     id: 'e27',
@@ -690,7 +690,7 @@ export const FOETELEK = [
     szenhidrat: 121.2,
     so: 0.8,
     allergenek: [1, 3, 7],
-    kategoria: 'Edesseg',
+    kategoria: 'Édesség',
   },
   {
     id: 'e28',
@@ -700,7 +700,7 @@ export const FOETELEK = [
     szenhidrat: 104.2,
     so: 1,
     allergenek: [1, 3, 7],
-    kategoria: 'Edesseg',
+    kategoria: 'Édesség',
   },
   {
     id: 'e29',
@@ -900,7 +900,7 @@ export const FOETELEK = [
     szenhidrat: 81.6,
     so: 2.4,
     allergenek: [1, 3, 7, 10],
-    kategoria: 'Bo_Zsirban_Sult',
+    kategoria: 'Bő_Zsírban_Sült',
   },
   {
     id: 'e49',
@@ -910,7 +910,7 @@ export const FOETELEK = [
     szenhidrat: 87.2,
     so: 2.1,
     allergenek: [1, 3, 7, 10],
-    kategoria: 'Bo_Zsirban_Sult',
+    kategoria: 'Bő_Zsírban_Sült',
   },
   {
     id: 'e50',
@@ -1030,7 +1030,7 @@ export const FOETELEK = [
     szenhidrat: 56.5,
     so: 3,
     allergenek: [1, 3, 7, 9, 10],
-    kategoria: 'húskeszitmeny',
+    kategoria: 'Húskészítmény',
   },
   {
     id: 'e62',
@@ -1060,7 +1060,7 @@ export const FOETELEK = [
     szenhidrat: 87.6,
     so: 2.6,
     allergenek: [1, 3, 7],
-    kategoria: 'húskeszitmeny',
+    kategoria: 'Húskészítmény',
   },
   {
     id: 'e65',
@@ -1070,7 +1070,7 @@ export const FOETELEK = [
     szenhidrat: 81.1,
     so: 0.9,
     allergenek: [1, 3, 6, 7, 8],
-    kategoria: 'Edesseg',
+    kategoria: 'Édesség',
   },
   {
     id: 'e66',
@@ -1080,7 +1080,7 @@ export const FOETELEK = [
     szenhidrat: 96.7,
     so: 0.9,
     allergenek: [1, 3, 7],
-    kategoria: 'Edesseg',
+    kategoria: 'Édesség',
   },
   {
     id: 'e67',
@@ -1090,7 +1090,7 @@ export const FOETELEK = [
     szenhidrat: 39.5,
     so: 2.4,
     allergenek: [1, 3],
-    kategoria: 'Tojas',
+    kategoria: 'Tojás',
   },
   {
     id: 'e68',
@@ -1120,7 +1120,7 @@ export const FOETELEK = [
     szenhidrat: 10.7,
     so: 2.4,
     allergenek: [1],
-    kategoria: 'húskeszitmeny',
+    kategoria: 'Húskészítmény',
   },
   {
     id: 'e71',
@@ -1130,7 +1130,7 @@ export const FOETELEK = [
     szenhidrat: 40.2,
     so: 1.9,
     allergenek: [1, 3, 7, 11],
-    kategoria: 'húskeszitmeny',
+    kategoria: 'Húskészítmény',
   },
   {
     id: 'e72',
@@ -1140,7 +1140,7 @@ export const FOETELEK = [
     szenhidrat: 79.8,
     so: 2.4,
     allergenek: [1],
-    kategoria: 'húskeszitmeny',
+    kategoria: 'Húskészítmény',
   },
   {
     id: 'e73',
@@ -1180,7 +1180,7 @@ export const FOETELEK = [
     szenhidrat: 19.1,
     so: 2.6,
     allergenek: [3],
-    kategoria: 'Tojas',
+    kategoria: 'Tojás',
   },
   {
     id: 'e77',
@@ -1190,7 +1190,7 @@ export const FOETELEK = [
     szenhidrat: 14.1,
     so: 1.8,
     allergenek: [3],
-    kategoria: 'Tojas',
+    kategoria: 'Tojás',
   },
 ];
 
