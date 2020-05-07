@@ -90,7 +90,7 @@ export default function calculateMonthlyFood() {
    *  f) amennyiben nem ertuk el a 20 kajat, kezdodik elolrol
    *  */
 
-  abc(filteredKombo);
+  getMonthlyFood(filteredKombo);
 
   return [];
 }
@@ -131,48 +131,75 @@ function filterFoodByMetrics(kombo) {
   return filteredKombo;
 }
 
-function abc(kombo) {
+function getMonthlyFood(kombo) {
   // kivalogatni 6 elemet amik kozott van hus
 
   const currentCategoryCounts = {};
 
-  console.log('foods');
+  const husosKajak = categoryHandler(kombo, currentCategoryCounts, 'Hús', 6);
+  console.log('husosKajak');
+  console.log(husosKajak);
 
-  Array(20)
+  const huskeszKajak = categoryHandler(
+    kombo,
+    currentCategoryCounts,
+    'Húskészítmény',
+    2
+  );
+
+  console.log('huskeszKajak');
+  console.log(huskeszKajak);
+}
+
+function categoryHandler(kombo, currentCategoryCounts, kategoria, min) {
+  const blacklist = [];
+  return Array(min)
     .fill(null)
-    .forEach((_) => {
-      takeRandom(kombo, currentCategoryCounts);
-    });
+    .map(
+      (_) => takeRandom(kombo, currentCategoryCounts, blacklist, kategoria).food
+    );
 }
 
 // TODO: work for only one category first
-function takeRandom(kombo, currentCategoryCounts, blacklist = []) {
+function takeRandom(kombo, currentCategoryCounts, blacklist = [], kategoria) {
   // general random szamot
   // visszaadja az elemet, ha megfelel
   // megfelel - checkkek es nem fordult meg elo
 
+  const reGenerateFood = () => {
+    blacklist.push(index);
+    return takeRandom(kombo, currentCategoryCounts, blacklist, kategoria);
+  };
+
   const index = generateBetween(0, kombo.length);
   const food = kombo[index];
+  const { kategoriak } = food;
 
   let isMealAcceptable = true;
 
   if (blacklist.includes(index)) {
-    isMealAcceptable = false;
+    return reGenerateFood();
   }
 
-  for (const kategoria in kombo.kategoriak) {
-    isMealAcceptable = isCategoryOkay(kategoria, currentCategoryCounts);
+  if (kategoria && !kategoriak.includes(kategoria)) {
+    return reGenerateFood();
   }
 
-  // TODO: is meal already picked
-  // FIXME: fix blacklist
+  for (const mealKategoria in kategoriak) {
+    isMealAcceptable = isCategoryOkay(mealKategoria, currentCategoryCounts);
+  }
 
   if (!isMealAcceptable) {
-    return takeRandom(kombo, currentCategoryCounts, [...blacklist, index]);
+    return reGenerateFood();
   }
 
-  console.log(food);
-  return food;
+  // increase count
+  currentCategoryCounts[kategoria] =
+    currentCategoryCounts[kategoria] !== undefined
+      ? currentCategoryCounts[kategoria] + 1
+      : 0;
+
+  return { food, currentCategoryCounts, blacklist };
 }
 
 function generateBetween(min, max) {
