@@ -9,15 +9,15 @@ const DAILY_CHECKS = {
 const MONTHLY_CHECKS = {
   Hús: { min: 6, max: 10 },
   Húskészítmény: { min: 2 },
-  Hal: {},
-  Belsőség: {},
-  Tojás: {},
-  Rizs: {},
-  Tészta: {},
-  Krumpli: {},
-  Édesség: {},
-  Péksütemény: {},
-  Bő_Zsírban_Sült: {},
+  Hal: { min: 1},
+  Belsőség: { max: 2},
+  Tojás: { min: 2, max: 4 },
+  Rizs: { max: 3 },
+  Tészta: { max: 2 },
+  Krumpli: { max: 5 },
+  Édesség: { max: 2 },
+  Péksütemény: { max: 2 },
+  Bő_Zsírban_Sült: { max: 1 },
 };
 
 function calculateDailyIntake(meal) {
