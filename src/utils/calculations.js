@@ -9,8 +9,8 @@ const DAILY_CHECKS = {
 const MONTHLY_CHECKS = {
   Hús: { min: 6, max: 10 },
   Húskészítmény: { min: 2 },
-  Hal: { min: 1},
-  Belsőség: { max: 2},
+  Hal: { min: 1 },
+  Belsőség: { max: 2 },
   Tojás: { min: 2, max: 4 },
   Rizs: { max: 3 },
   Tészta: { max: 2 },
@@ -66,6 +66,12 @@ const withKategoria = (meal) => {
   };
 };
 
+const withoutKategoriak = ({ leves, foetel, harmadik }) => ({
+  leves,
+  foetel,
+  harmadik,
+});
+
 export default function calculateMonthlyFood() {
   // 1. 3-as parok osszeallitasa
 
@@ -73,8 +79,6 @@ export default function calculateMonthlyFood() {
 
   // 2. kaloria es so alapjan szures
   const filteredKombo = filterFoodByMetrics(kombo);
-  console.log('filteredKombo');
-  console.log(filteredKombo);
 
   /**
    *  3. ALGORITMUS
@@ -90,9 +94,7 @@ export default function calculateMonthlyFood() {
    *  f) amennyiben nem ertuk el a 20 kajat, kezdodik elolrol
    *  */
 
-  getMonthlyFood(filteredKombo);
-
-  return [];
+  return getMonthlyFood(filteredKombo);
 }
 
 function createFoodDescartes() {
@@ -132,23 +134,57 @@ function filterFoodByMetrics(kombo) {
 }
 
 function getMonthlyFood(kombo) {
-  // kivalogatni 6 elemet amik kozott van hus
-
   const currentCategoryCounts = {};
 
-  const husosKajak = categoryHandler(kombo, currentCategoryCounts, 'Hús', 6);
-  console.log('husosKajak');
-  console.log(husosKajak);
+  const minValues = getCategoryMinCount();
+  const mealsWithMinCheck = minValues.reduce((lista, { category, count }) => {
+    const alreadyPickedItems = lista.filter(({ kategoriak }) =>
+      kategoriak.includes(category)
+    );
+    const realCount = count - alreadyPickedItems.length;
 
-  const huskeszKajak = categoryHandler(
+    const newCategoryItems = categoryHandler(
+      kombo,
+      currentCategoryCounts,
+      category,
+      realCount
+    );
+    return [...lista, ...newCategoryItems];
+  }, []);
+
+  const remaining = 20 - mealsWithMinCheck.length;
+  const remainingItems = categoryHandler(
     kombo,
     currentCategoryCounts,
-    'Húskészítmény',
-    2
+    null,
+    remaining
   );
 
-  console.log('huskeszKajak');
-  console.log(huskeszKajak);
+  const x = [...mealsWithMinCheck, ...remainingItems];
+
+  const yy = x.map(withoutKategoriak);
+  return yy;
+}
+
+function getCategoryMinCount() {
+  const hasMinimumCount = ([_, checks]) => 'min' in checks;
+
+  const compare = (a, b) => {
+    if (a[1].min > b[1].min) return -1;
+    if (a[1].min < b[1].min) return 1;
+
+    return 0;
+  };
+
+  const extractCategoryAndCount = ([category, checks]) => ({
+    category,
+    count: checks.min,
+  });
+  const x = Object.entries(MONTHLY_CHECKS).filter(hasMinimumCount);
+
+  const y = x.sort(compare).map(extractCategoryAndCount);
+
+  return y;
 }
 
 function categoryHandler(kombo, currentCategoryCounts, kategoria, min) {

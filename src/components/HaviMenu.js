@@ -17,10 +17,14 @@ export default function HaviMenu() {
         Array(4)
           .fill(null)
           .map((_, i) => {
+            const min = i * 5;
+            const max = (i + 1) * 5;
             return (
               <HetiMenu
+                // eslint-disable-next-line react/no-array-index-key
+                key={i + 1}
                 index={i + 1}
-                hetiEtel={haviKaja.splice(5 * i, 5 * i + 5)}
+                hetiEtel={haviKaja.filter((e, j) => j >= min && j < max)}
               />
             );
           })

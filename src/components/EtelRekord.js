@@ -4,7 +4,7 @@ import React from 'react';
 import ALLERGENEK from '../utils/constants';
 
 function mergeIntoMeal(etel) {
-  return etel.reduce((meal, course) => {
+  return Object.values(etel).reduce((meal, course) => {
     for (const key in course) {
       if (!meal[key]) {
         meal[key] = course[key];
@@ -45,8 +45,6 @@ export default function EtelRekord({ title, hetiEtel, prop }) {
       {hetiEtel.map((etel) => {
         const meal = mergeIntoMeal(etel);
 
-        console.log(etel);
-        console.log('etel');
         return <EtelCella key={meal.id} meal={meal} prop={prop} />;
       })}
     </tr>
