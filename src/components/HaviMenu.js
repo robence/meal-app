@@ -1,5 +1,6 @@
 import React from 'react';
 
+import './HaviMenu.css';
 import Container from 'react-bootstrap/Container';
 import calculateMonthlyFood from '../utils/calculations';
 
@@ -9,8 +10,8 @@ export default function HaviMenu() {
   const haviKaja = calculateMonthlyFood();
 
   return (
-    <Container style={{ backgroundColor: 'rgba(255,255,255,.9)' }}>
-      <h2>Havi Menü</h2>
+    <Container fluid="xl" style={{ backgroundColor: 'rgba(255,255,255,.9)' }}>
+      <h2 className="title">Havi Menü</h2>
       {haviKaja.length < 20 ? (
         <div>nincs eleg etel</div>
       ) : (

@@ -101,7 +101,7 @@ export const LEVESEK = [
   },
   {
     id: 'l11',
-    nev: 'Komenyes_tojasleves',
+    nev: 'Komenyes tojasleves',
     feherje: 11.3,
     zsir: 20.8,
     szenhidrat: 25,
@@ -121,7 +121,7 @@ export const LEVESEK = [
   },
   {
     id: 'l13',
-    nev: 'Tarkonyos_raguleves',
+    nev: 'Tarkonyos raguleves',
     feherje: 19.8,
     zsir: 5.3,
     szenhidrat: 9.9,
@@ -191,7 +191,7 @@ export const LEVESEK = [
   },
   {
     id: 'l20',
-    nev: 'Sutotokos_sargaborsoleves',
+    nev: 'Sutotokos sargaborsoleves',
     feherje: 9.5,
     zsir: 7.2,
     szenhidrat: 33.3,
@@ -261,7 +261,7 @@ export const LEVESEK = [
   },
   {
     id: 'l27',
-    nev: 'Csurgatott_tojasleves',
+    nev: 'Csurgatott tojasleves',
     feherje: 8.9,
     zsir: 5.3,
     szenhidrat: 12.5,
@@ -281,7 +281,7 @@ export const LEVESEK = [
   },
   {
     id: 'l29',
-    nev: 'Kolbaszos_bableves',
+    nev: 'Kolbaszos bableves',
     feherje: 20.1,
     zsir: 11.7,
     szenhidrat: 15,
@@ -301,7 +301,7 @@ export const LEVESEK = [
   },
   {
     id: 'l31',
-    nev: 'Hamis_gulyasleves',
+    nev: 'Hamis gulyasleves',
     feherje: 13.2,
     zsir: 25.1,
     szenhidrat: 39.9,
@@ -321,7 +321,7 @@ export const LEVESEK = [
   },
   {
     id: 'l33',
-    nev: 'zöldséges_tarhonyaleves',
+    nev: 'zöldséges tarhonyaleves',
     feherje: 8.2,
     zsir: 1.9,
     szenhidrat: 28.6,
@@ -341,7 +341,7 @@ export const LEVESEK = [
   },
   {
     id: 'l35',
-    nev: 'Citromos_zellerkrémleves',
+    nev: 'Citromos zellerkrémleves',
     feherje: 4.4,
     zsir: 8.1,
     szenhidrat: 12.6,
@@ -371,7 +371,7 @@ export const LEVESEK = [
   },
   {
     id: 'l38',
-    nev: 'Magyaros_burgonyaleves',
+    nev: 'Magyaros burgonyaleves',
     feherje: 8.2,
     zsir: 12.4,
     szenhidrat: 32.7,
@@ -381,7 +381,7 @@ export const LEVESEK = [
   },
   {
     id: 'l39',
-    nev: 'Alfoldi_burgonyaleves',
+    nev: 'Alfoldi burgonyaleves',
     feherje: 7.3,
     zsir: 13.4,
     szenhidrat: 29.7,
@@ -391,7 +391,7 @@ export const LEVESEK = [
   },
   {
     id: 'l40',
-    nev: 'Olasz_zöldségleves',
+    nev: 'Olasz zöldségleves',
     feherje: 4.8,
     zsir: 6.9,
     szenhidrat: 22.9,
@@ -444,7 +444,7 @@ export const FOETELEK = [
   },
   {
     id: 'e3',
-    nev: 'Kapros_tokfőzelék',
+    nev: 'Kapros tokfőzelék',
     feherje: 17.5,
     zsir: 29.1,
     szenhidrat: 32.8,
@@ -454,7 +454,7 @@ export const FOETELEK = [
   },
   {
     id: 'e4',
-    nev: 'Gyümölcsmártás,piritott_dara',
+    nev: 'Gyümölcsmártás,piritott dara',
     feherje: 5.1,
     zsir: 2.2,
     szenhidrat: 29.3,
@@ -474,7 +474,7 @@ export const FOETELEK = [
   },
   {
     id: 'e6',
-    nev: 'Kapormártás_húsgomboccal',
+    nev: 'Kapormártás húsgomboccal',
     feherje: 23.1,
     zsir: 15.8,
     szenhidrat: 86.3,
@@ -504,7 +504,7 @@ export const FOETELEK = [
   },
   {
     id: 'e9',
-    nev: 'Zoldborsofőzelék,rantott_parizsi',
+    nev: 'Zoldborsofőzelék,rantott parizsi',
     feherje: 37.3,
     zsir: 25.4,
     szenhidrat: 48.2,
@@ -514,7 +514,7 @@ export const FOETELEK = [
   },
   {
     id: 'e10',
-    nev: 'Tepsis_turos_metelt',
+    nev: 'Tepsis turos metelt',
     feherje: 13.2,
     zsir: 14.4,
     szenhidrat: 53.3,
@@ -524,7 +524,7 @@ export const FOETELEK = [
   },
   {
     id: 'e11',
-    nev: 'Sertesmaj,tort_burgonya',
+    nev: 'Sertesmaj,tort burgonya',
     feherje: 23.6,
     zsir: 8.8,
     szenhidrat: 28.3,
@@ -534,7 +534,7 @@ export const FOETELEK = [
   },
   {
     id: 'e12',
-    nev: 'Szezamos_csirkecombfile,rizibizi',
+    nev: 'Szezamos csirkecombfile,rizibizi',
     feherje: 13.1,
     zsir: 35.5,
     szenhidrat: 71.9,
@@ -544,7 +544,7 @@ export const FOETELEK = [
   },
   {
     id: 'e13',
-    nev: 'Kefires_pogacsa',
+    nev: 'Kefires pogacsa',
     feherje: 3.8,
     zsir: 6.9,
     szenhidrat: 19.6,
@@ -554,7 +554,7 @@ export const FOETELEK = [
   },
   {
     id: 'e14',
-    nev: 'Burgonya_pogacsa',
+    nev: 'Burgonya pogacsa',
     feherje: 3.4,
     zsir: 18.2,
     szenhidrat: 6.2,
@@ -564,7 +564,7 @@ export const FOETELEK = [
   },
   {
     id: 'e15',
-    nev: 'Sajtos_pogacsa',
+    nev: 'Sajtos pogacsa',
     feherje: 6.8,
     zsir: 22.4,
     szenhidrat: 17.8,
@@ -574,7 +574,7 @@ export const FOETELEK = [
   },
   {
     id: 'e16',
-    nev: 'Sargaborso_főzelék',
+    nev: 'Sargaborso főzelék',
     feherje: 28.5,
     zsir: 2.6,
     szenhidrat: 77,
@@ -584,17 +584,17 @@ export const FOETELEK = [
   },
   {
     id: 'e17',
-    nev: 'Rantott_karfiol,rizs,tartarmatas',
+    nev: 'Rantott karfiol,rizs,tartarmatas',
     feherje: 11.2,
     zsir: 64,
     szenhidrat: 66.5,
     so: 3,
     allergenek: [1, 3, 6, 7, 10, 14],
-    kategoria: 'Bő_Zsírban_Sült',
+    kategoria: 'Bő Zsírban Sült',
   },
   {
     id: 'e18',
-    nev: 'Juhturoval_toltott_csirkemell,kuszkusz',
+    nev: 'Juhturoval toltott csirkemell,kuszkusz',
     feherje: 20,
     zsir: 12.8,
     szenhidrat: 51.1,
@@ -604,7 +604,7 @@ export const FOETELEK = [
   },
   {
     id: 'e19',
-    nev: 'Toltott_paprika,húsgomboc',
+    nev: 'Toltott paprika,húsgomboc',
     feherje: 27.1,
     zsir: 42.2,
     szenhidrat: 57.9,
@@ -634,7 +634,7 @@ export const FOETELEK = [
   },
   {
     id: 'e22',
-    nev: 'Zalai_borzaska,petrezselymes_burgonya',
+    nev: 'Zalai borzaska,petrezselymes burgonya',
     feherje: 41.2,
     zsir: 44.3,
     szenhidrat: 66.7,
@@ -644,7 +644,7 @@ export const FOETELEK = [
   },
   {
     id: 'e23',
-    nev: 'Hagymas_csirkemaj,rizs',
+    nev: 'Hagymas csirkemaj,rizs',
     feherje: 50,
     zsir: 22.3,
     szenhidrat: 39.1,
@@ -654,7 +654,7 @@ export const FOETELEK = [
   },
   {
     id: 'e24',
-    nev: 'Hawaii_csirkemell,rizs',
+    nev: 'Hawaii csirkemell,rizs',
     feherje: 43.6,
     zsir: 25.2,
     szenhidrat: 79.6,
@@ -664,7 +664,7 @@ export const FOETELEK = [
   },
   {
     id: 'e25',
-    nev: 'Zellerbundas_halfalatok,hasabburgonya',
+    nev: 'Zellerbundas halfalatok,hasabburgonya',
     feherje: 15.8,
     zsir: 16.4,
     szenhidrat: 45.4,
@@ -674,7 +674,7 @@ export const FOETELEK = [
   },
   {
     id: 'e26',
-    nev: 'Daras_tészta,lekvar',
+    nev: 'Daras tészta,lekvar',
     feherje: 10.4,
     zsir: 9.6,
     szenhidrat: 60.9,
@@ -684,7 +684,7 @@ export const FOETELEK = [
   },
   {
     id: 'e27',
-    nev: 'Szilvas_derelye',
+    nev: 'Szilvas derelye',
     feherje: 16.5,
     zsir: 4.5,
     szenhidrat: 121.2,
@@ -694,7 +694,7 @@ export const FOETELEK = [
   },
   {
     id: 'e28',
-    nev: 'Barackos_derelye',
+    nev: 'Barackos derelye',
     feherje: 16.3,
     zsir: 4.1,
     szenhidrat: 104.2,
@@ -704,7 +704,7 @@ export const FOETELEK = [
   },
   {
     id: 'e29',
-    nev: 'Bacskai_rizses_hús',
+    nev: 'Bacskai rizses hús',
     feherje: 17,
     zsir: 13.1,
     szenhidrat: 31.4,
@@ -714,7 +714,7 @@ export const FOETELEK = [
   },
   {
     id: 'e30',
-    nev: 'Lecsos_sertesragu,orsotészta',
+    nev: 'Lecsos sertesragu,orsotészta',
     feherje: 58.8,
     zsir: 21.1,
     szenhidrat: 31.8,
@@ -734,7 +734,7 @@ export const FOETELEK = [
   },
   {
     id: 'e32',
-    nev: 'Holstein_szelet,petrezselymes_burgonya',
+    nev: 'Holstein szelet,petrezselymes burgonya',
     feherje: 35.8,
     zsir: 30.4,
     szenhidrat: 57.3,
@@ -744,7 +744,7 @@ export const FOETELEK = [
   },
   {
     id: 'e33',
-    nev: 'Stefania_vagdalt,burgonyapure',
+    nev: 'Stefania vagdalt,burgonyapure',
     feherje: 24,
     zsir: 36.6,
     szenhidrat: 51,
@@ -754,7 +754,7 @@ export const FOETELEK = [
   },
   {
     id: 'e34',
-    nev: 'Ranott_sertesborda,rizibizi',
+    nev: 'Ranott sertesborda,rizibizi',
     feherje: 32.2,
     zsir: 23.4,
     szenhidrat: 81.8,
@@ -764,7 +764,7 @@ export const FOETELEK = [
   },
   {
     id: 'e35',
-    nev: 'Carbonara_spagetti',
+    nev: 'Carbonara spagetti',
     feherje: 21,
     zsir: 23.7,
     szenhidrat: 52.8,
@@ -774,7 +774,7 @@ export const FOETELEK = [
   },
   {
     id: 'e36',
-    nev: 'Bolognai_spagetti',
+    nev: 'Bolognai spagetti',
     feherje: 20.2,
     zsir: 19.8,
     szenhidrat: 53.8,
@@ -784,7 +784,7 @@ export const FOETELEK = [
   },
   {
     id: 'e37',
-    nev: 'Penne_carbonara',
+    nev: 'Penne carbonara',
     feherje: 27.9,
     zsir: 48.9,
     szenhidrat: 51,
@@ -794,7 +794,7 @@ export const FOETELEK = [
   },
   {
     id: 'e38',
-    nev: 'Hentes_tokany,tarhonya',
+    nev: 'Hentes tokany,tarhonya',
     feherje: 25,
     zsir: 23.4,
     szenhidrat: 51.1,
@@ -804,7 +804,7 @@ export const FOETELEK = [
   },
   {
     id: 'e39',
-    nev: 'Rakott_zoldbab',
+    nev: 'Rakott zoldbab',
     feherje: 32.1,
     zsir: 28.3,
     szenhidrat: 54.7,
@@ -814,7 +814,7 @@ export const FOETELEK = [
   },
   {
     id: 'e40',
-    nev: 'Sult_csirkecomb,zöldség_koret',
+    nev: 'Sult csirkecomb,zöldség koret',
     feherje: 63.2,
     zsir: 12.9,
     szenhidrat: 42.1,
@@ -824,7 +824,7 @@ export const FOETELEK = [
   },
   {
     id: 'e41',
-    nev: 'Sajtos_stangli ',
+    nev: 'Sajtos stangli ',
     feherje: 10,
     zsir: 24,
     szenhidrat: 52,
@@ -834,7 +834,7 @@ export const FOETELEK = [
   },
   {
     id: 'e42',
-    nev: 'Pizzas_csiga',
+    nev: 'Pizzas csiga',
     feherje: 10.7,
     zsir: 30,
     szenhidrat: 57.1,
@@ -844,7 +844,7 @@ export const FOETELEK = [
   },
   {
     id: 'e43',
-    nev: 'Kakos_csiga',
+    nev: 'Kakos csiga',
     feherje: 6.5,
     zsir: 19.1,
     szenhidrat: 57.2,
@@ -854,7 +854,7 @@ export const FOETELEK = [
   },
   {
     id: 'e44',
-    nev: 'Kokuszos_csiga',
+    nev: 'Kokuszos csiga',
     feherje: 13.3,
     zsir: 16.2,
     szenhidrat: 39.8,
@@ -864,7 +864,7 @@ export const FOETELEK = [
   },
   {
     id: 'e45',
-    nev: 'Zabpehelybundas_sertesszelet,petrezselymes_burgonya',
+    nev: 'Zabpehelybundas sertesszelet,petrezselymes burgonya',
     feherje: 30.7,
     zsir: 17.6,
     szenhidrat: 29.6,
@@ -874,7 +874,7 @@ export const FOETELEK = [
   },
   {
     id: 'e46',
-    nev: 'Milanoi_sertesborda,spagetti',
+    nev: 'Milanoi sertesborda,spagetti',
     feherje: 47.4,
     zsir: 26.7,
     szenhidrat: 68.4,
@@ -884,7 +884,7 @@ export const FOETELEK = [
   },
   {
     id: 'e47',
-    nev: 'Komenyes_sertessult,tort_burgonya',
+    nev: 'Komenyes sertessult,tort burgonya',
     feherje: 65.7,
     zsir: 42.6,
     szenhidrat: 23.4,
@@ -894,27 +894,27 @@ export const FOETELEK = [
   },
   {
     id: 'e48',
-    nev: 'Rantott_sajt,rizs,tartar_mártás',
+    nev: 'Rantott sajt,rizs,tartar mártás',
     feherje: 30.3,
     zsir: 30.6,
     szenhidrat: 81.6,
     so: 2.4,
     allergenek: [1, 3, 7, 10],
-    kategoria: 'Bő_Zsírban_Sült',
+    kategoria: 'Bő Zsírban Sült',
   },
   {
     id: 'e49',
-    nev: 'Rantott_gombafejek,rizs,tartas_mártás',
+    nev: 'Rantott gombafejek,rizs,tartas mártás',
     feherje: 26.2,
     zsir: 32.1,
     szenhidrat: 87.2,
     so: 2.1,
     allergenek: [1, 3, 7, 10],
-    kategoria: 'Bő_Zsírban_Sült',
+    kategoria: 'Bő Zsírban Sült',
   },
   {
     id: 'e50',
-    nev: 'Halpaprikas,zöldséges_kuszkusz',
+    nev: 'Halpaprikas,zöldséges kuszkusz',
     feherje: 32.6,
     zsir: 20.4,
     szenhidrat: 55.9,
@@ -924,7 +924,7 @@ export const FOETELEK = [
   },
   {
     id: 'e51',
-    nev: 'Kijevi_csirkemell,burgonya_krokett',
+    nev: 'Kijevi csirkemell,burgonya krokett',
     feherje: 37.1,
     zsir: 26,
     szenhidrat: 86.7,
@@ -934,7 +934,7 @@ export const FOETELEK = [
   },
   {
     id: 'e52',
-    nev: 'Krumplis_tészta',
+    nev: 'Krumplis tészta',
     feherje: 18.7,
     zsir: 11.5,
     szenhidrat: 106.1,
@@ -944,7 +944,7 @@ export const FOETELEK = [
   },
   {
     id: 'e53',
-    nev: 'Tejfolos_csirkecomb,kagylotészta',
+    nev: 'Tejfolos csirkecomb,kagylotészta',
     feherje: 41.6,
     zsir: 14.6,
     szenhidrat: 68,
@@ -954,7 +954,7 @@ export const FOETELEK = [
   },
   {
     id: 'e54',
-    nev: 'Tepsis_spagetti',
+    nev: 'Tepsis spagetti',
     feherje: 17.2,
     zsir: 56.4,
     szenhidrat: 24.8,
@@ -964,7 +964,7 @@ export const FOETELEK = [
   },
   {
     id: 'e55',
-    nev: 'Rantott_busafile,burgonyapure',
+    nev: 'Rantott busafile,burgonyapure',
     feherje: 76.2,
     zsir: 15.9,
     szenhidrat: 56.4,
@@ -974,7 +974,7 @@ export const FOETELEK = [
   },
   {
     id: 'e56',
-    nev: 'Brassoi_apropecsenye',
+    nev: 'Brassoi apropecsenye',
     feherje: 53.6,
     zsir: 46,
     szenhidrat: 87.6,
@@ -984,7 +984,7 @@ export const FOETELEK = [
   },
   {
     id: 'e57',
-    nev: 'Rakott_burgonya',
+    nev: 'Rakott burgonya',
     feherje: 11.7,
     zsir: 20.8,
     szenhidrat: 26.1,
@@ -994,7 +994,7 @@ export const FOETELEK = [
   },
   {
     id: 'e58',
-    nev: 'Lecsos_csirkemell,rizs',
+    nev: 'Lecsos csirkemell,rizs',
     feherje: 30.6,
     zsir: 8.2,
     szenhidrat: 13.7,
@@ -1014,7 +1014,7 @@ export const FOETELEK = [
   },
   {
     id: 'e60',
-    nev: 'Rakott_cukkini',
+    nev: 'Rakott cukkini',
     feherje: 26.1,
     zsir: 24.1,
     szenhidrat: 16.9,
@@ -1034,7 +1034,7 @@ export const FOETELEK = [
   },
   {
     id: 'e62',
-    nev: 'Sajtos_csirkemell,bulgur',
+    nev: 'Sajtos csirkemell,bulgur',
     feherje: 92,
     zsir: 19.5,
     szenhidrat: 50.3,
@@ -1044,7 +1044,7 @@ export const FOETELEK = [
   },
   {
     id: 'e63',
-    nev: 'Csobensult_zöldséges_csirke',
+    nev: 'Csobensult zöldséges csirke',
     feherje: 26.8,
     zsir: 3.8,
     szenhidrat: 63.7,
@@ -1064,7 +1064,7 @@ export const FOETELEK = [
   },
   {
     id: 'e65',
-    nev: 'Aranygaluska,vanilia_ontet',
+    nev: 'Aranygaluska,vanilia ontet',
     feherje: 14.9,
     zsir: 16.9,
     szenhidrat: 81.1,
@@ -1074,7 +1074,7 @@ export const FOETELEK = [
   },
   {
     id: 'e66',
-    nev: 'Szilvas_gomboc',
+    nev: 'Szilvas gomboc',
     feherje: 11.5,
     zsir: 1.7,
     szenhidrat: 96.7,
@@ -1084,7 +1084,7 @@ export const FOETELEK = [
   },
   {
     id: 'e67',
-    nev: 'Tojasos_nokedli',
+    nev: 'Tojasos nokedli',
     feherje: 17,
     zsir: 14,
     szenhidrat: 39.5,
@@ -1094,7 +1094,7 @@ export const FOETELEK = [
   },
   {
     id: 'e68',
-    nev: 'Vajas_pulykamellcsikok,petrezselymes_burgonya',
+    nev: 'Vajas pulykamellcsikok,petrezselymes burgonya',
     feherje: 43.7,
     zsir: 14.6,
     szenhidrat: 25.3,
@@ -1104,7 +1104,7 @@ export const FOETELEK = [
   },
   {
     id: 'e69',
-    nev: 'Rakott_kaposzta',
+    nev: 'Rakott kaposzta',
     feherje: 16.6,
     zsir: 28.2,
     szenhidrat: 35.9,
@@ -1114,7 +1114,7 @@ export const FOETELEK = [
   },
   {
     id: 'e70',
-    nev: 'Disznotoros,fott_burgonya',
+    nev: 'Disznotoros,fott burgonya',
     feherje: 42.3,
     zsir: 66.3,
     szenhidrat: 10.7,
@@ -1134,7 +1134,7 @@ export const FOETELEK = [
   },
   {
     id: 'e72',
-    nev: 'Kolbaszos_lecso',
+    nev: 'Kolbaszos lecso',
     feherje: 25.5,
     zsir: 29.6,
     szenhidrat: 79.8,
@@ -1144,7 +1144,7 @@ export const FOETELEK = [
   },
   {
     id: 'e73',
-    nev: 'Sajtos_tokehal_gombaval',
+    nev: 'Sajtos tokehal gombaval',
     feherje: 34.7,
     zsir: 24.6,
     szenhidrat: 10.9,
@@ -1154,7 +1154,7 @@ export const FOETELEK = [
   },
   {
     id: 'e74',
-    nev: 'Voros_tonhal,zöldséges_rizs',
+    nev: 'Voros tonhal,zöldséges rizs',
     feherje: 22.2,
     zsir: 14.2,
     szenhidrat: 36.1,
@@ -1164,7 +1164,7 @@ export const FOETELEK = [
   },
   {
     id: 'e75',
-    nev: 'Tonhalas_spagetti',
+    nev: 'Tonhalas spagetti',
     feherje: 56.7,
     zsir: 15.8,
     szenhidrat: 91.3,
@@ -1174,7 +1174,7 @@ export const FOETELEK = [
   },
   {
     id: 'e76',
-    nev: 'Spenotos_brokkolis_tojas',
+    nev: 'Spenotos brokkolis tojas',
     feherje: 29.1,
     zsir: 37,
     szenhidrat: 19.1,
@@ -1184,7 +1184,7 @@ export const FOETELEK = [
   },
   {
     id: 'e77',
-    nev: 'Tojasos_sultpaprika',
+    nev: 'Tojasos sultpaprika',
     feherje: 16,
     zsir: 33.5,
     szenhidrat: 14.1,
@@ -1197,7 +1197,7 @@ export const FOETELEK = [
 export const HARMADIK = [
   {
     id: 'h1',
-    nev: 'Savanyu_uborka',
+    nev: 'Savanyu uborka',
     feherje: 0.3,
     zsir: 0.2,
     szenhidrat: 1.2,
@@ -1207,7 +1207,7 @@ export const HARMADIK = [
   },
   {
     id: 'h2',
-    nev: 'Savanyu_paprika',
+    nev: 'Savanyu paprika',
     feherje: 0.5,
     zsir: 0.2,
     szenhidrat: 2.4,
@@ -1237,7 +1237,7 @@ export const HARMADIK = [
   },
   {
     id: 'h5',
-    nev: 'Tejfolos_uborka_salata',
+    nev: 'Tejfolos uborka salata',
     feherje: 1.2,
     zsir: 4.5,
     szenhidrat: 5.4,
@@ -1257,7 +1257,7 @@ export const HARMADIK = [
   },
   {
     id: 'h7',
-    nev: 'Hagymas_kaposztasalata',
+    nev: 'Hagymas kaposztasalata',
     feherje: 1.5,
     zsir: 0.3,
     szenhidrat: 5.9,
@@ -1267,7 +1267,7 @@ export const HARMADIK = [
   },
   {
     id: 'h8',
-    nev: 'Vegyes_savanyusag',
+    nev: 'Vegyes savanyusag',
     feherje: 0.7,
     zsir: 0.2,
     szenhidrat: 4,

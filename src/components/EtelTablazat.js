@@ -4,7 +4,9 @@ import EtelRekord from './EtelRekord';
 
 export default function EtelTablazat({ hetiEtel }) {
   const tablazatInfo = [
-    { title: 'Étel', prop: 'nev' },
+    { title: 'Leves', prop: 'leves' },
+    { title: 'Főétel', prop: 'foetel' },
+    { title: 'Harmadik', prop: 'harmadik' },
     { title: 'Fehérje', prop: 'feherje' },
     { title: 'Zsír', prop: 'zsir' },
     { title: 'Szénhidrát', prop: 'szenhidrat' },

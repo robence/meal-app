@@ -47,6 +47,9 @@ export default function EtelRekord({ title, hetiEtel, prop }) {
 
       {hetiEtel.map((etel) => {
         const meal = mergeIntoMeal(etel);
+        if (!meal[prop]) {
+          return <EtelCella key={etel[prop].id} meal={etel[prop]} prop="nev" />;
+        }
 
         return <EtelCella key={meal.id} meal={meal} prop={prop} />;
       })}
