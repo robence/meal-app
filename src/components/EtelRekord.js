@@ -10,7 +10,7 @@ function mergeIntoMeal(etel) {
         meal[key] = course[key];
       } else {
         if (typeof meal[key] === 'string') {
-          meal[key] = `${meal[key]}\n${course[key]}`;
+          meal[key] = `${meal[key]}, ${course[key]}`;
         } else if (typeof meal[key] === 'number') {
           const sum = meal[key] + course[key];
           meal[key] = Math.round((sum + Number.EPSILON) * 100) / 100;
@@ -30,6 +30,9 @@ const EtelCella = ({ meal, prop }) => {
     text = meal[prop].map((allergenkod) => ALLERGENEK[allergenkod]).join(', ');
   }
 
+  if (prop === 'nev') {
+    text = meal[prop].replaceAll(',', '\n');
+  }
   return (
     <td>
       <p>{text}</p>

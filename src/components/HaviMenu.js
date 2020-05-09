@@ -9,7 +9,7 @@ export default function HaviMenu() {
   const haviKaja = calculateMonthlyFood();
 
   return (
-    <Container>
+    <Container style={{ backgroundColor: 'rgba(255,255,255,.9)' }}>
       <h2>Havi Menü</h2>
       {haviKaja.length < 20 ? (
         <div>nincs eleg etel</div>
