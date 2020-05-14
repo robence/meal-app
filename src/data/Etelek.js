@@ -121,7 +121,7 @@ export const LEVESEK = [
   },
   {
     id: 'l13',
-    nev: 'Tarkonyos raguleves',
+    nev: 'Tárkonyos raguleves',
     feherje: 19.8,
     zsir: 5.3,
     szenhidrat: 9.9,
