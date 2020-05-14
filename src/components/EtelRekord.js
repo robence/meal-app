@@ -30,9 +30,6 @@ const EtelCella = ({ meal, prop }) => {
     text = meal[prop].map((allergenkod) => ALLERGENEK[allergenkod]).join(', ');
   }
 
-  if (prop === 'nev') {
-    text = meal[prop].replaceAll(',', '\n');
-  }
   return (
     <td>
       <p>{text}</p>
