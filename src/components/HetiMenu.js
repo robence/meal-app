@@ -18,7 +18,7 @@ export default function HetiMenu({ index, hetiEtel }) {
     >
       <Card.Body>
         <Card.Title>
-          <h4>{`${index}. Heti Menu`}</h4>
+          <h4>{`${index}. Heti Menü`}</h4>
         </Card.Title>
         <Table striped bordered hover>
           <thead>
